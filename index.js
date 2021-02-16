@@ -32,7 +32,6 @@ const { groupmenu } = require('./FADHIL/groupmenu.js')
 const { mediamenu } = require('./FADHIL/mediamenu.js')
 const { nsfwmenu } = require('./FADHIL/nsfwmenu.js')
 const { listmenu } = require('./FADHIL/listmenu.js')
-const { funmenu } = require('./FADHIL/funmenu.js')
 const { makermenu } = require('./FADHIL/makermenu.js')
 //jangan hiraukan ini!!,,,ini uji coba yang gagal:) kontol//
 //const { gabutmenu } = require('./FADHIL/gabutmenu')
