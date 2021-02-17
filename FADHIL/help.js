@@ -4,7 +4,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt) => {
 ╭───────────────────
 ┃╭─────────────────
 ┃├➲ \`\`\`SALVE\`\`\`👋 *${pushname2}*
-┃├➲ \`\`\`EU SOU\`\`\` *${name}
+┃├➲ \`\`\`EU SOU\`\`\` *CREITIM
 ┃├➲ \`\`\`Seu limite :\`\`\` *${limitt}*
 ┃├➲ \`\`\`Verificação.   :\`\`\` *YES*
 ┃├➲ \`\`\`Premium.   :\`\`\` *NO*
@@ -35,8 +35,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt) => {
 ┃├❍ *${prefix}blocklist*
 ┃├❍ *${prefix}banlist*
 ┃├❍ *${prefix}bahasa*
-┃╰─────────────────
+┃╰─────────────────
 
-         *© BRUXINHO MODS*`
+
+            CREITIM*`
 }
 exports.help = help
