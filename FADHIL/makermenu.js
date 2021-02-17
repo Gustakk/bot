@@ -44,6 +44,6 @@ const makermenu = (prefix) => {
 │
 ╰──────────────────────
 
-	           *©Fadhil Graphy*`
+	     *©CREITIM*`
 	}
 exports.makermenu = makermenu
