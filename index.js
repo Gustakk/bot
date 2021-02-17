@@ -3007,18 +3007,19 @@ async function starts() {
                 await limitAdd(sender) 
                 break 
 
-            case 'play':
-                  if (isBanned) return reply(ind.baned())
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname)) 
-                reply(ind.wait())
-                anu = await fetchJson(`https://api.vhtear.com/ytmp3?query=${body.slice(6)}&apikey=${VhtearKey}`)
+            case 'play':   
+	            if (isBanned) return reply(mess.only.benned) 
+				if (!isUser) return reply(mess.only.userB)
+                reply(mess.wait)
+                play = body.slice(9)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*「❗」CANÇAO ENCONTRADA: ${anu.result.title}\n➸ DURAÇAO: ${anu.result.duration}\n➸ Size : ${anu.result.size}\n\n*[WAIT]ta enviando ai*`
-                buffer = await getBuffer(anu.result.image)
-                lagu = await getBuffer(anu.result.mp3)
-                baby.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-                baby.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', quoted: mek})
+                 infomp3 = `*Canção encontrada!!!*\nTítulo : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*A MÚSICA ESTA SENDO ENVIADA PDP*`
+                buffer = await getBuffer(anu.result.thumbnail)
+                lagu = await getBuffer(anu.result.url_audio)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                await limitAdd(sender)
                 break
                 
            case 'asupan':
