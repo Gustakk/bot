@@ -21,6 +21,6 @@ const nsfwmenu = (prefix) => {
 │
 ╰────────────────────
 
-	            *© BRUXINHO MODS*`
+	   *© CREITIM*`
 	}
 exports.nsfwmenu = nsfwmenu
