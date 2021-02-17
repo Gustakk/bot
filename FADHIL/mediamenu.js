@@ -21,6 +21,6 @@ const mediamenu = (prefix) => {
 │
 ╰──────────────────────
 	
-                  *© BRUXINHO MODS*`
+              *© CREITIM*`
 	}
 exports.mediamenu = mediamenu
