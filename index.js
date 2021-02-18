@@ -78,7 +78,7 @@ const anlink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN: BRUXINHO MODS\n'//GANTI NAMA LU COK
-            + 'ORG:ELgusta;\n'//GANTI NAMA LU!!
+            + 'ORG:CRIADOR GUSTA;\n'//GANTI NAMA LU!!
             + 'TEL;type=CELL;type=VOICE;waid=556193845817:+55 61 9384-5817\n'//GANTI NOMOR LU
             + 'END:VCARD'
 
@@ -125,7 +125,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Salve @${num.split('@')[0]}\nSeja bem vindo ao grupp *${mdata.subject}*\n*entrou tem que pagar babão em kenal:)*\n\n*SE COMPORTA CORNÃO*`
+				teks = `Salve @${num.split('@')[0]}\nSeja bem vindo ao *${mdata.subject}*\n*se comporta pra n levar ban:)*\n\nnLEIA A DESCRIÇÃO:)*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -163,7 +163,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const FadhilGraphy = ["5511934713306@s.whatsapp.net"]
+			const FadhilGraphy = ["556193845817@s.whatsapp.net"]
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -197,8 +197,8 @@ async function starts() {
 					ownerG: '*[⚠️]Desculpe, este pedido só pode ser usado pelo grupo proprietário!*',
 					ownerB: '*[⚠️]Desculpe, este comando só pode ser usado pelo gustakk!* ',
 					premium: '*[⚠️]Desculpe, este comando só pode ser usado por usuários Premium!!*',
-					userB: `[ ⚠️NÃO REGISTRO⚠]\n\n️ SALVE *${pushname2}* Vocês ainda não esta registrado *${name}* \nRegistre-se primeiro Para ter acesso ao menu\n\nexemplo ${prefix}daftar seunome/idade`,
-					admin: '*[⚠️]Desculpe, este comando só pode ser usado pelo grupo de administradores!*',
+					userB: `[ ⚠️NÃO REGISTRO⚠]\n\n️ SALVE *${pushname2}* Vocês ainda não esta registrado *${name}* \nRegistre-se primeiro Para ter acesso ao menu\n\nexemplo ${prefix}daftar gustavo/19`,
+					admin: '*[⚠️]Desculpe, este comando só pode ser usado pelos administradores!*',
 					Badmin: '*[⚠️]Desculpe, este comando só pode ser usado quando o bot é um administrador!*'
 				}
 			}
@@ -210,7 +210,7 @@ async function starts() {
 			"556193845817@s.whatsapp.net"//GANTI NOMOR LU
 			]
 			premium = [
-			"556193845817@s.whatsapp.net"//GANTI NOMOR YAG MAU DI PREM, GABISA NYIMPEN DI DATABASE!!
+			"557391442763@s.whatsapp.net","5511957213526@s.whatsapp.net","556194558701@s.whatsapp.net","556193845817@s.whatsapp.net","558581936821@s.whatsapp.net","5527999531285@s.whatsapp.net","553186547312@s.whatsapp.net"//GANTI NOMOR YAG MAU DI PREM, GABISA NYIMPEN DI DATABASE!!
 			]
 			
 			const apakahh = [
@@ -538,7 +538,7 @@ async function starts() {
 					/*client.sendMessage(from, rules(name, uptime, tanggal, jam, prefix), text, {quoted: mek })
 					}, 1200)
 					setTimeout( () => {*/
-					client.sendMessage(from, 'Olá,este é meu menu,em caso de problemas ou duvidas chame meu dono :) wa.me/+5561993845817', text, {quoted: mek})
+					client.sendMessage(from, 'Salve,esta é minha lista dd comandos :)', text, {quoted: mek})
 					}, 0)
     				break
 /*********PISAH MENU**********/
@@ -596,7 +596,8 @@ async function starts() {
 					me = client.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Ativo desde* : ${kyun(uptime)}\n\n⟩➢ Total de pessoa: *${user.length}* User\n⟩➢ *Youtube* : https://youtube.com/c/FadhilGraphy\n⟩➢ *Instagram* : https://www.instagram.com/ahmd.fdhl_\n⟩➢ *Special Thanks To* :\n⟩➢ Allah SWT \n⟩➢ Farhan (Fxc7)\n⟩➢ MahankBarBar\n⟩➢ Fadhil Graphy\n⟩➢ Bryan Rafly\n⟩➢ Affis Junianto\n⟩➢ Anang\n⟩➢ NazwaS\n⟩➢Penyedia apikey\n⟩➢MyBot Team\n⟩➢User Bot`
+					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Ativo desde* : ${kyun(uptime)}\n\n⟩➢ Total de pessoa: *${user.length}* User\n⟩➢ *instagram:https://www.instagram.com/p/CLVOhCzDnd-VE1piy0NEZpJf6HtxenYPQ5O4hI0/?igshid=wx97a52q45n7 
+					instagram2:https://www.instagram.com/p/CLX14HPJtPW/?igshid=o4y6aic5rvvb  SIGAM LA`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -822,7 +823,7 @@ async function starts() {
 				    break 
 				case 'owner':
 				case 'creator':
-                 client.sendMessage(from, {displayname: "+55 11 93471-3306", vcard: vcard}, MessageType.contact, { quoted: mek})
+                 client.sendMessage(from, {displayname: "+55 61 9384-5817", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'Salva o ctt do meu criador ai linda e avisa no PV pa ele salvar tbm😏🔥:)',text, { quoted: mek} )
                  break
                  case 'fitnah':
@@ -1082,7 +1083,7 @@ async function starts() {
 			    	anu = await client.groupLeave(from, `Bye All Member *${groupMetadata.subject}*`, groupId)
 	                break
 	            case 'getses':
-                    if (!isOwner) return client.reply(from, 'Este comando é apenas para o Bruxinho', id)
+                    if (!isOwner) return client.reply(from, 'Este comando é apenas para o gusta', id)
                     const sesPic = await client.getSnapshot()
                     client.sendFile(from, sesPic, 'session.jpg', 'Neh...', id)
                     break
@@ -1285,7 +1286,7 @@ async function starts() {
                          contextInfo: {mentionedJid: [nomor]},
                      }
                     client.sendMessage(NomerOwner, options, text, {quoted: mek})
-                    reply('Problemas foram relatados ao Bruxinho, relatórios falsos não serão respondidos..')
+                    reply('Problemas foram relatados ao gusta, relatórios falsos não serão respondidos..')
                     break
               case 'request':
 			if (isBanned) return reply(mess.only.benned)    
@@ -1299,8 +1300,8 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6289649480997@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('As solicitações foram relatadas ao Bruxinho, as solicitações que podem sobrecarregar o proprietário não serão respondidas.')
+                    client.sendMessage('556193845817@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('As solicitações foram relatadas ao Gusta, as solicitações que podem sobrecarregar o proprietário não serão respondidas.')
                     break
 				case 'meme':
 				if (isBanned) return reply(mess.only.benned)    
@@ -2402,7 +2403,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 BRUXINHO MODS 〙', members_id, true)
+					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 EL GUSTA 〙', members_id, true)
 					break
 			    case 'kbbi':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2490,7 +2491,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *FADHILBOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *PROPRIETAIO MANDOU AAVISA* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -3007,7 +3008,7 @@ async function starts() {
                 await limitAdd(sender) 
                 break 
 
-            case 'play':   
+         case 'play':   
 	            if (isBanned) return reply(mess.only.benned) 
 				if (!isUser) return reply(mess.only.userB)
                 reply(mess.wait)
