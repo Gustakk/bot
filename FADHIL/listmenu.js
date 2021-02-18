@@ -37,7 +37,7 @@ ____██_____██
 ├➲ *${prefix}play*
 ╰─────────────────────
 
-╭────「 *DIVERSÃO ────
+╭────「FUN/DIVERSAO──
 ├➲ *${prefix}anjing* (cachorro)
 ├➲ *${prefix}kucing* (gato)
 ├➲ *${prefix}testime*
@@ -253,13 +253,12 @@ ____██_____██
       ╰┓┏━━┓┏╯
          ╰╯      ╰╯
 ┌─────────4.0────────┐
-         SHITS_MANGA_ROSA 
+         MOHAMED_SHITT🔥💥
 └─────────4.0────────┘
 
 `
 } 
 exports.listmenu = listmenu
-
 
 
 
