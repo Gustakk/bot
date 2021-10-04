@@ -54,9 +54,8 @@
     "url": "git+https://github.com/FarhanXCode7/termux-bot-wa.git"
   },
   "bugs": {
-    "url": "https://github.com/FarhanXCode7/termux-bot-wa/issues"
-  },
-  "https://devcenter.heroku.com/articles/troureenshot-node-deploys"
+    "url": "https://github.com/FarhanXCode7/termux-bot-wa/issues
+  },https://devcenter.heroku.com/articles/troureenshot-node-deploys"
   "homepage": "https://github.com/FarhanXCode7/termux-bot-wa#readme"
   },
   "start”: “node index"
