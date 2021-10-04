@@ -58,5 +58,5 @@
   },
   "homepage": "https://github.com/FarhanXCode7/termux-bot-wa#readme"
   },
-  `”start”: “node index”`
+  ”start”: “node index”
 }
